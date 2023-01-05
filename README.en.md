@@ -10,8 +10,8 @@ PR은 언제든 환영입니다. 🤩
 
 ## App
 
-- 수백만 명의 사용자가 사용하는 앱이 있다고 가정할 때, 이전 버전에서 발생하는 버그나 크래시를 최소화하기 위해서 어떤 조치를 할 수 있나?
-- 크래시를 고칠 때 우선순위를 어떻게 정하는가? 앱에서 자주 사용하는 화면에서의 가끔 있는 크래시와 덜 사용하는 화면에서의 빈번한 크래시 중 어떤 것이 더 중요하다고 생각하는가?
+- Assuming you have an app with millions of users, what steps can you take to minimize bugs or regressions from occurring in old versions?
+- How do you prioritize fixing a crash? Is a smaller crash in a more frequently used part of the app more important to fix than a larger crash in a less frequently used part?
 - 세 개의 Endpoint[Dev, Stage, Prod]가 있고 세 Endpoint를 오가며 모바일 앱을 테스트하려고 한다면, 어떤 방식으로 해결할 수 있나?
   - Build Configuration으로 해결할 수 있는지? 단점은?
   - 런타임에 해결할 수 있는 방법이 있는지?
