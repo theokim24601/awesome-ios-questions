@@ -15,6 +15,7 @@ PR은 언제든 환영입니다. 🤩
 - 세 개의 Endpoint[Dev, Stage, Prod]가 있고 세 Endpoint를 오가며 모바일 앱을 테스트하려고 한다면, 어떤 방식으로 해결할 수 있나?
   - Build Configuration으로 해결할 수 있는지? 단점은?
   - 런타임에 해결할 수 있는 방법이 있는지?
+- 오프라인(네트워크 연결이 안 된) 모드를 지원하는 앱이 있다. 사용자가 오프라인 상태에서 작업한 내용을 서버와 동기화하려면 어떻게 해야 하나?
 
 ## iOS
 
@@ -40,12 +41,13 @@ PR은 언제든 환영입니다. 🤩
 - iOS에서 사용되는 디자인 패턴은 어떤 것이 있나?
 
 ### Concurrency
-- 
+
 - Dispatch queue에 등록한 작업을 취소할 수 있나?
 
 ### UIKit
 
-- UIViewController의 Life cycle 중에 viewWillAppear와 viewDidAppear가 있는데, 이 둘은 항상 짝으로 호출될까?
+- UIViewController의 Life cycle 중에 `viewWillAppear`와 `viewDidAppear`가 있는데, 이 둘은 항상 짝으로 호출될까?
+- What is the purpose of the reuseIdentifier? What is the advantage of setting it to a non-nil value?
 
 ### DeepLink
 
@@ -56,11 +58,12 @@ PR은 언제든 환영입니다. 🤩
 ## Swift
 
 - Value Type과 Reference Type에는 무엇이 있는가?
-  - Collection, Closure는 무슨 타입인가? 
-- `nil`과 `.none`의 차이점은?
+  - Collection, Closure는 무슨 타입인가?
+- What is the difference optional between `nil` and `.none`?
 - Generic이 필요한 이유는?
-- 변수 타입을 선언할 때 Any 키워드와 Generic을 사용하는 방법이 있는데, 차이점은?
-- 아래 코드의 print 결과?
+- What is the difference between Generics and Any?
+- What is the difference between Array and NSArray?
+- 아래 코드의 `print` 결과?
   ```swift
   var verb = "like"
 
@@ -73,6 +76,7 @@ PR은 언제든 환영입니다. 🤩
   closure()
   ```
 - 클래스 안의 `static`함수와 `class`함수의 차이는 무엇인가?
+- Why do we need to specify self to refer to a stored property or a method When writing asynchronous code?
 
 ### Memory
 
@@ -80,9 +84,11 @@ PR은 언제든 환영입니다. 🤩
   - `guard let self else { return }` 가 갖는 의미는 무엇인가?
   - `guard let self else { return }` 대신 `self?.`를 사용하면 어떻게 되나?
 - 클로저가 실행되는 동안 self가 메모리에서 해제되지 않도록 보장할 수 있는 방법이 있는지?
+- What is your process for tracing and fixing a memory leak?
 
 ### Performance
 
+- `struct`와 `class`의 성능 차이가 발생하는 이유는?
 - Collection의 `map()`, `redeuce()` 와 `for loops` 중에 어떤 것이 더 빠르고 무엇이 성능의 차이를 가져오는가?
 - Array와 Dictionary 중 어떤 것이 탐색 속도가 더 빠른가?
 
@@ -96,6 +102,9 @@ PR은 언제든 환영입니다. 🤩
 - DisposeBag이 무엇이고 어떻게 동작하는가?
 - `dispose()`를 호출하면 구독은 즉각 중단이 되는가?
 
+## General
+
+- What is difference between REST and GraphQL?
 
 ## License
 
